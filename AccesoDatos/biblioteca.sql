@@ -1,0 +1,5 @@
+CREATE TABLE editoriales(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(25) UNIQUE,
+    pais VARCHAR(20) UNIQUE
+);
