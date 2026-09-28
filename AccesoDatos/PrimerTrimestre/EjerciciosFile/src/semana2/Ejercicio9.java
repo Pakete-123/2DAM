@@ -14,6 +14,7 @@ public class Ejercicio9 {
     Path copyF = copyD.resolve("alumnos_backup.txt");
 
     try {
+      
       Files.createDirectories(copyD);
 
       Files.copy(p, copyF, StandardCopyOption.REPLACE_EXISTING);
