@@ -23,10 +23,10 @@ public class Ejercicio8 {
         String[] palabras = str.split(";");
 
         String nom = palabras[1];
-        String ed = palabras[2];
+        int ed = Integer.parseInt(palabras[2]);
         String cur = palabras[3];
 
-        System.out.printf("%s (%s años) - %s%n", nom, ed, cur);
+        System.out.printf("%s (%d años) - %s%n", nom, ed, cur);
 
       }
 

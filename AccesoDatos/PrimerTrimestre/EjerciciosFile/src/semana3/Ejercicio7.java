@@ -17,8 +17,8 @@ public class Ejercicio7 {
         "2;Iván Robles;21;SEA 2",
         "3;Paloma Aguilar;21;AFF 2",
         "4;Juan Atahona;22;DAM 2",
-        "5;Yesenia Toro;22;DAW 2",
-        "6;Pablo Torrecilla;21;DAW 2");
+        "5;Yesenia Toro;22;DAM 2",
+        "6;Pablo Torrecilla;21;DAM 2");
 
     try {
 

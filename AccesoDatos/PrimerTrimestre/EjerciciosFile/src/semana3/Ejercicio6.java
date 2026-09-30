@@ -39,7 +39,7 @@ public class Ejercicio6 {
       System.out.print("Palabra a buscar: ");
       String str = bR.readLine();
 
-      if (str == null || str.isBlank()) {
+      if (str.isBlank()) {
         System.out.println("Palabra no válida");
         return;
       }
