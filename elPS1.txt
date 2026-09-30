@@ -3,7 +3,7 @@ Import-Module -Name Terminal-Icons
 
 $global:Atajos = @{
 
-  ac = "$HOME\Documents\2DAM\AccesoDatos"
+  ad = "$HOME\Documents\2DAM\AccesoDatos"
   psp = "$HOME\Documents\2DAM\PSP"
   di = "$HOME\Documents\2DAM\DesarrolloInterfaces"
   dam = "$HOME\Documents\2DAM"

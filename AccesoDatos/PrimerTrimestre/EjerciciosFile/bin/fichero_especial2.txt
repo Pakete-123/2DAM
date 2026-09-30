@@ -1,0 +1,1 @@
+Hola, soy un fichero con ñ, tildes como esdrújula o tío y con signos ortográficos como () ¿? !¡

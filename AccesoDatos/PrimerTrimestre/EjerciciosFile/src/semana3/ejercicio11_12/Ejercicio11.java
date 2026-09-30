@@ -1,4 +1,4 @@
-package semana3.ejercicio11;
+package semana3.ejercicio11_12;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
-public class Ejercicios11 {
+public class Ejercicio11 {
 
   public static void main(String[] args) {
 
