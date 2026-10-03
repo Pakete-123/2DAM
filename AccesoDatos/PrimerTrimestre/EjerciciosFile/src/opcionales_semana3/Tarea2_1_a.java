@@ -1,4 +1,4 @@
-package semana4;
+package opcionales_semana3;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.nio.file.Path;
 
 public class Tarea2_1_a {
 
-  private static final Path PATH = Path.of("src/semana4/fichero.txt");
+  private static final Path PATH = Path.of("src/opcionales_semana3/fichero.txt");
 
   public static void main(String[] args) {
 

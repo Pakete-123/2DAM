@@ -1,4 +1,4 @@
-package semana4;
+package opcionales_semana3;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,7 +12,9 @@ public class Tarea3_1 {
 
   public static void main(String[] args) {
 
-    try (BufferedReader bRI = new BufferedReader(new InputStreamReader(System.in))) {
+    try (BufferedReader bRI = new BufferedReader(new InputStreamReader(System.in));) {
+
+      int counter = 1;
 
       System.out.print("Dame la ruta al fichero que tengo que leer: ");
       Path origin = Path.of(bRI.readLine());
@@ -26,8 +28,12 @@ public class Tarea3_1 {
         String reader;
         while ((reader = bRF.readLine()) != null) {
 
-          bWF.write(reader);
-          bWF.newLine();
+          if (counter % 2 == 0) {
+            bWF.write(reader);
+            bWF.newLine();
+          }
+
+          counter++;
 
         }
 

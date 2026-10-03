@@ -1,4 +1,4 @@
-package semana4;
+package opcionales_semana3;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +10,7 @@ import java.nio.file.StandardOpenOption;
 
 public class Tarea2_2 {
 
-  private static final Path PATH = Path.of("src/semana4/fichero2.txt");
+  private static final Path PATH = Path.of("src/opcionales_semana3/fichero2.txt");
   private static final String EXIT = "exit";
 
   public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Tarea2_2 {
       System.out.println("Introduce lo que quieras que se escriba en el fichero, escribe 'exit' para salir: ");
       String str;
 
-      while ((str = bR.readLine()) != null && str.equals(EXIT)) {
+      while ((str = bR.readLine()) != null && !str.equals(EXIT)) {
 
         bW.write(str);
         bW.newLine();
