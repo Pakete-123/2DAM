@@ -54,7 +54,7 @@ public class App extends Application {
 
         // 2.- Creamos un TextField para introducir el texto de la tarea
         campoTarea = new TextField();
-        // El método setPrompText es un método que muestra el texto cuando el TextField
+        // El método setPromptText es un método que muestra el texto cuando el TextField
         // está vacío
         campoTarea.setPromptText("Escribe una tarea: ");
 
@@ -131,6 +131,9 @@ public class App extends Application {
         // 17.- Añadimos eventos a los botones con funciones Lambda.
         botonAñadir.setOnAction(e -> anadirTarea()); // Cuando se pulsa un botón se ejecuta el código del método
                                                      // anadirTarea();
+        botonEliminar.setOnAction(e -> eliminarTarea());
+        botonCompletar.setOnAction(e -> marcarCompletada());
+        botonLimpiar.setOnAction(e -> limpiarTodas());
 
         // Necesito una escena para que se muestre la ventana y llamar al método
         // stage.show
@@ -168,6 +171,50 @@ public class App extends Application {
 
     }
 
+    private void eliminarTarea() {
+        String selected = listaTareas.getSelectionModel().getSelectedItem();
+        int index = listaTareas.getSelectionModel().getSelectedIndex();
+
+        if (index < 0) {
+            mostrarMensaje("Selecciona una tarea para eliminarla.");
+            return;
+        }
+
+        listaTareas.getItems().remove(index);
+        mostrarMensaje("Tarea eliminada: " + selected);
+    }
+
+    private void marcarCompletada() {
+        int index = listaTareas.getSelectionModel().getSelectedIndex();
+
+        if (index < 0) {
+            mostrarMensaje("Selecciona una tarea para completarla.");
+            return;
+        }
+
+        String task = listaTareas.getItems().get(index);
+        if (task.startsWith(" ✓ ")) {
+            mostrarMensaje("Esa tarea ya está completada");
+            return;
+        }
+
+        listaTareas.getItems().set(index, " ✓ " + task);
+        mostrarMensaje("Tarea completada.");
+    }
+
+    private void limpiarTodas() {
+        int index = listaTareas.getItems().size();
+        listaTareas.getItems().removeIf(task -> task.startsWith(" ✓ "));
+        int deleted = index - listaTareas.getItems().size();
+
+        if (deleted == 0) {
+            mostrarMensaje("No hay tareas completadas para limpiar.");
+        } else {
+            mostrarMensaje("Se han eliminado " + deleted + " tareas completadas.");
+        }
+
+    }
+
     /**
      * Método que muestra en el interfaz el texto pasado como parámetro.
      * 
@@ -177,6 +224,9 @@ public class App extends Application {
         this.mensaje.setText(str);
     }
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         launch();

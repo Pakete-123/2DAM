@@ -21,10 +21,8 @@ public class Ejercicio1 {
 
     for (Double t : temperatures) {
       sum += t;
-      if (t > max)
-        max = t;
-      if (t < min)
-        min = t;
+      max = Math.max(max, t);
+      min = Math.min(min, t);
 
     }
 

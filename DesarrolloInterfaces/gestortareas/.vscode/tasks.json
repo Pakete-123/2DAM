@@ -1,0 +1,19 @@
+// Copiar dentro de .vscode de cada proyecto donde se quiera hacer javadoc
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generar Javadoc HTML",
+      "type": "shell",
+      "command": "javadoc -encoding UTF-8 -docencoding UTF-8 -charset UTF-8 -private -author -version -d docs (Get-ChildItem src -Recurse -Filter *.java).FullName",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
