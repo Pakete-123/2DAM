@@ -43,7 +43,7 @@ public class Ejercicio5 {
     } catch (EOFException e) {
       System.out.printf("Fichero leído correctamente.");
     } catch (IOException e) {
-      System.err.printf("Error de Lectura en el archivo %s%n.");
+      System.err.printf("Error de Lectura en el archivo %s%n.", e.getMessage());
     } catch (ClassNotFoundException e) {
       System.err.println("Error: Clase no encontrada.");
     }
