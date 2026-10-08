@@ -1,4 +1,5 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
-  "cSpell.words": ["ieslazarocardenas", "javafx", "openjfx"]
+  "cSpell.words": ["ieslazarocardenas", "javafx", "openjfx"],
+  "java.compile.nullAnalysis.mode": "automatic"
 }

@@ -5,3 +5,5 @@ test-classes/
 *.zip
 *.rar
 *.7z
+
+*.jar
