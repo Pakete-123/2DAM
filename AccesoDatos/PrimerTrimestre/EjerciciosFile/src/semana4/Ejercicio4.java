@@ -31,10 +31,8 @@ public class Ejercicio4 {
         if (search == code) {
 
           found = true;
-          
-          
-        }
 
+        }
 
       }
 
