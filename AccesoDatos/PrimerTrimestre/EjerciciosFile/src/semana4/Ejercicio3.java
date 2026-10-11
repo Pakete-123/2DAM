@@ -20,7 +20,7 @@ public class Ejercicio3 {
 
       while (true) {
 
-        System.out.print("Código de producto. Introduce 0 para salir.");
+        System.out.print("Introduce el código de producto. Introduce 0 para salir. ");
         int code = Integer.parseInt(bR.readLine());
         if (code == 0)
           break;
@@ -43,7 +43,8 @@ public class Ejercicio3 {
       return;
     }
 
-    int all = 0, totalValue = 0;
+    int all = 0;
+    double totalValue = 0;
     try (DataInputStream dIS = new DataInputStream(new FileInputStream(FILE))) {
 
       while (true) {

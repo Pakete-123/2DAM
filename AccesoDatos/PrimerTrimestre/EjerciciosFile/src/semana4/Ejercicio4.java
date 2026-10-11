@@ -31,9 +31,18 @@ public class Ejercicio4 {
         if (search == code) {
 
           found = true;
+          System.out.println("Producto Encontrado");
+          System.out.printf("Código: %d%n", code);
+          System.out.printf("Nombre: %s%n", name);
+          System.out.printf("Precio: %.2f%n", price);
+          System.out.printf("Stock: %d%n", stock);
 
         }
 
+      }
+
+      if (!found) {
+        System.err.printf("No existe ningún producto con el código %d", search);
       }
 
     } catch (EOFException e) {
