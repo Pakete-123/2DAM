@@ -38,7 +38,7 @@ public class Ej3 {
 
 				return Integer.parseInt(l);
 
-			} catch (Exception e) {
+			} catch (NumberFormatException e) {
 
 				System.err.println("Error: Introduce un valor válido.");
 
@@ -91,9 +91,6 @@ public class Ej3 {
 			}
 
 		} catch (IOException e) {
-
-			e.printStackTrace();
-
 		}
 
 	}
