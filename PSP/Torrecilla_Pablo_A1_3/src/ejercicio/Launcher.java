@@ -106,6 +106,7 @@ public class Launcher {
     } catch (IOException e) {
       System.err.printf("Error de entrada/salida con el proceso hijo: %s%n", e.getMessage());
       System.exit(EXIT_ERROR);
+      
     } catch (InterruptedException e) {
       /**
        * Thread.currentThread().interrupt() -> Esto hace que el hilo restaure la
