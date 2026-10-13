@@ -127,7 +127,7 @@ public class Ejercicio11 {
       System.out.println("Se ha cargado la copia de seguridad.");
 
     } catch (FileNotFoundException e) {
-      System.err.printf("No se ha encontrado el archivo %s: %s.%n", FILE, e.getMessage());
+      System.err.printf("No se ha encontrado el archivo: %s.%n", e.getMessage());
     } catch (IOException | ClassNotFoundException e) {
       System.err.printf("Error de lectura en el archivo %s: %s.%n", FILE, e.getMessage());
     }
