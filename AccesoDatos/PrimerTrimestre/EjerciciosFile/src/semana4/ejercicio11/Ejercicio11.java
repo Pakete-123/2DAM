@@ -144,21 +144,13 @@ public class Ejercicio11 {
         input = Integer.parseInt(bR.readLine());
 
         switch (input) {
-
           case 1 -> aniadirCliente(bR);
-
           case 2 -> mostrarClientes();
-
           case 3 -> buscarCliente(bR);
-
           case 4 -> eliminarCliente(bR);
-
           case 5 -> guardarCopia();
-
           case 6 -> cargarCopia();
-
           case 0 -> menu = !menu;
-
           default -> System.out.println("Introduce un valor válido.");
         }
 
