@@ -186,8 +186,8 @@ public class Ejercicio12 {
 
     int opt;
 
-    do {
-      try (BR) {
+    try (BR) {
+      do {
         menu();
         opt = Integer.parseInt(BR.readLine());
 
@@ -200,14 +200,14 @@ public class Ejercicio12 {
           case 6 -> eliminar();
           case 7 -> guardar();
           case 8 -> cargar();
-          case 0 -> active = !active;
+          case 0 -> active = false;
           default -> System.out.println("Introduce un valor válido.");
         }
 
-      } catch (NumberFormatException | IOException e) {
-        System.err.printf("Error: introduce un número válido (%s).%n", e.getMessage());
-      }
-    } while (active);
+      } while (active);
+    } catch (NumberFormatException | IOException e) {
+      System.err.printf("Error: introduce un número válido (%s).%n", e.getMessage());
+    }
 
     System.out.println("Ha salido del programa.");
   }
