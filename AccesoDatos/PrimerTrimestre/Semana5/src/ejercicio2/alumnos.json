@@ -1,0 +1,22 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Paloma",
+      "edad": 21,
+      "ciclo": "AFF"
+    },
+    {
+      "id": 2,
+      "nombre": "David",
+      "edad": 20,
+      "ciclo": "DAW"
+    },
+    {
+      "id": 3,
+      "nombre": "Pablo",
+      "edad": 21,
+      "ciclo": "DAM"
+    }
+  ]
+}
