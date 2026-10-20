@@ -1,0 +1,39 @@
+{
+  "productos": [
+    {
+      "codigo": 1,
+      "nombre": "RTX 5090",
+      "categoria": "GPU",
+      "precio": 7900,
+      "unidades": 5
+    },
+    {
+      "codigo": 2,
+      "nombre": "RX 9070 XT",
+      "categoria": "GPU",
+      "precio": 1170,
+      "unidades": 8
+    },
+    {
+      "codigo": 3,
+      "nombre": "Intel Core Ultra 9 285K",
+      "categoria": "CPU",
+      "precio": 599,
+      "unidades": 10
+    },
+    {
+      "codigo": 4,
+      "nombre": "Ryzen 9 9950X3D2",
+      "categoria": "CPU",
+      "precio": 1050,
+      "unidades": 3
+    },
+    {
+      "codigo": 5,
+      "nombre": "MSI B550-A PRO",
+      "categoria": "Placa Base",
+      "precio": 120,
+      "unidades": 16
+    }
+  ]
+}

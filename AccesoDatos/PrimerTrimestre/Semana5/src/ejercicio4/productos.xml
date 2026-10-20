@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<productos>
+  <producto codigo="1">
+    <nombre>RTX 5090</nombre>
+    <categoria>GPU</categoria>
+    <precio>7900</precio>
+    <unidades>5</unidades>
+  </producto>
+  <producto codigo="2">
+    <nombre>RX 9070 XT</nombre>
+    <categoria>GPU</categoria>
+    <precio>1170</precio>
+    <unidades>8</unidades>
+  </producto>
+  <producto codigo="3">
+    <nombre>Intel Core Ultra 9 285K</nombre>
+    <categoria>CPU</categoria>
+    <precio>599</precio>
+    <unidades>10</unidades>
+  </producto>
+  <producto codigo="4">
+    <nombre>Ryzen 9 9950X3D2</nombre>
+    <categoria>CPU</categoria>
+    <precio>1050</precio>
+    <unidades>3</unidades>
+  </producto>
+  <producto codigo="5">
+    <nombre>MSI B550-A PRO</nombre>
+    <categoria>Placa Base</categoria>
+    <precio>120</precio>
+    <unidades>16</unidades>
+  </producto>
+</productos>
