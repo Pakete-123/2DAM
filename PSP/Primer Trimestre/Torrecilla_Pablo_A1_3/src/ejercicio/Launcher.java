@@ -32,7 +32,8 @@ public class Launcher {
 
   /**
    * Se construye el proceso hijo. Se fuerza UTF-8 en la salida del hijo
-   * (-Dst....encoding=UTF-8) para poder leerla siempre con la misma codificación.
+   * (-Dstd....encoding=UTF-8) para poder leerla siempre con la misma
+   * codificación.
    * pb.redirectErrorStream(true) para redirigir los mensajes de error del hijo al
    * stream del padre
    * 
@@ -106,7 +107,7 @@ public class Launcher {
     } catch (IOException e) {
       System.err.printf("Error de entrada/salida con el proceso hijo: %s%n", e.getMessage());
       System.exit(EXIT_ERROR);
-      
+
     } catch (InterruptedException e) {
       /**
        * Thread.currentThread().interrupt() -> Esto hace que el hilo restaure la
