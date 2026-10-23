@@ -25,6 +25,7 @@ public class Main {
 
     } catch (NumberFormatException e) {
       System.err.println("Introduce un formato numérico válido.");
+      System.exit(ERR_GRAL);
     } catch (IOException e) {
       System.err.println("Error de entrada/salida.");
     }

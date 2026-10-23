@@ -9,7 +9,8 @@ $global:Atajos = @{
   psp = "$HOME\Documents\2DAM\PSP"
   di = "$HOME\Documents\2DAM\DesarrolloInterfaces"
   dam = "$HOME\Documents\2DAM"
-  g = "C:\gachamon"
+  g = "$HOME\gachamon"
+  rl = "$HOME\rust_learns"
 
 }
 
